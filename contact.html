@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Trung Dinh" />
+    <meta
+      name="description"
+      content="Contact Scottia Resort to plan your Swiss Alps vacation and learn more about our accommodations and amenities." />
+    <title>Scottia Resort | Contact</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site">
+      <header class="site-header">
+        <h1><a href="index.html">Scottia Resort</a></h1>
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Accommodations</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div
+        class="hero"
+        role="img"
+        aria-label="Swiss valley resort landscape"></div>
+
+      <main>
+        <section class="contact-layout">
+          <div class="contact-info">
+            <div class="intro">
+              <h2>Contact Us</h2>
+              <p>
+                Please reach out to us with any questions or concerns. We are
+                happy to help you plan your dream vacation with us!
+              </p>
+              <p class="required-note">Required fields marked with a *</p>
+            </div>
+
+            <figure class="contact-image">
+              <img
+                src="images/swiss-peak.jpg"
+                alt="Snowy alpine peak rising above a valley"
+                width="350"
+                height="455" />
+            </figure>
+          </div>
+
+          <div class="contact-form">
+            <form
+              action="https://wp.zybooks.com/form-viewer.php"
+              method="post">
+              <div class="form-row">
+                <label for="full-name">Full Name <span class="required">*</span></label>
+                <input
+                  type="text"
+                  id="full-name"
+                  name="full-name"
+                  autocomplete="name"
+                  required />
+              </div>
+
+              <div class="form-row">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required />
+              </div>
+
+              <div class="form-row">
+                <label for="phone">Phone Number <span class="required">*</span></label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  autocomplete="tel"
+                  required />
+              </div>
+
+              <fieldset class="form-row">
+                <legend>
+                  Preferred Contact Method <span class="required">*</span>
+                </legend>
+                <label class="radio-option">
+                  <input
+                    type="radio"
+                    name="contact-method"
+                    value="email"
+                    required />
+                  Email
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="contact-method" value="phone" />
+                  Phone
+                </label>
+              </fieldset>
+
+              <div class="form-row">
+                <label for="comments">Comments <span class="required">*</span></label>
+                <textarea
+                  id="comments"
+                  name="comments"
+                  rows="5"
+                  required></textarea>
+              </div>
+
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Copyright ©2023 - Scottia Resort</p>
+        <p>This site is for educational purposes only</p>
+      </footer>
+    </div>
+  </body>
+</html>
